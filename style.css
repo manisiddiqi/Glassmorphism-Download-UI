@@ -1,0 +1,51 @@
+body {
+    background: #0f172a; /* Deep dark background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.glass-card {
+    width: 320px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.file-info {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.file-name { font-weight: 600; font-size: 1.1rem; }
+.file-size { font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+
+.progress-track {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #38bdf8; /* Soft Blue */
+    transition: width 0.2s ease-out;
+}
+
+.status-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.6);
+}
